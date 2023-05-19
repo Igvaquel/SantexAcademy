@@ -5,52 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header" class="header-container">
         <div id="header-left">
-            <img src="logo.svg">
+            <a href="">
+                <img class="logo" src="logo.svg">
+            </a>
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
+        <div id="header-right" class="header-right" >
+            <a href="">
+                <span class="ruta">Nosotros</span>
+            </a>
+            <a href="">
+                <span class="ruta">Programas</span>
+            </a>
+            <a href="">
+                <span class="ruta">Capaciontaciones</span>
+            </a>
+            <a href="">
+                <span class="ruta">Alianzas</span>
+            </a>
+            <a href="">
+                <span class="ruta">Contacto</span>
+            </a>
+            
             <button class="redondo">Sumate +</button>
+            <div class="redes">
+                <a href="">
+                    <img class="redes-ig" src="https://w7.pngwing.com/pngs/300/178/png-transparent-computer-icons-icon-design-instagram-logo-miscellaneous-area-smile.png" alt="">
+                </a>
+                <a href="">
+                    <img class="redes-in" src="https://static.vecteezy.com/system/resources/previews/003/692/704/non_2x/linkedin-american-business-logo-social-media-icon-black-pictogram-illustration-isolated-on-white-backgroud-free-vector.jpg" alt="">
+                </a>
+            </div>
         </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+    <div class="section-container">
+
+        <div id="introduction" class="introduction-container">
+            <div id="introduction-text">
+                <h1 class="texto">Somos una Fundación dedicada a mejorar</h1>
+                <h1 class="texto">la calidad de vida de las personas y su</h1>
+                <h1 class="texto" >entorno, a través de la tecnología.</h1>
+            </div>
+            <div id="introduction-actions" class="introduction-actions">
+                <button class="redondo " style="padding-bottom: 1em;">Contactanos
+                   <span class="arrow">&#8594;</span>            
+                </button>
+                <button class="redondo-violeta" style="margin-left: 14px;">Sumate
+                    <span class="plus">
+                        &#43;
+                    </span>
+                </button>
+            </div>
         </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+    
+    
+        <div class="impacto">
+            <div class="impacto-items">
+
+                <div class="impacto-derecha">
+                    <h1 class="impacto-titulo">. Impacto</h1>
+                    <p class="impacto-texto">Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+                </div>
+                <div class="impacto-izquierda">
+                    <div class="impacto-container">
+                        <p class="impacto-num">58</p>
+                        <p class="impacto-sub">Localidades</p>
+                    </div>
+                    <div class="impacto-container">
+                        <div class="impacto-container-mas">
+                            <p class="impacto-mas">+</p>
+                            <p class="impacto-num">50</p>
+                        </div>
+                        <p class="impacto-sub">Mentores</p>
+                    </div>
+                    <div class="impacto-container">
+                        <p class="impacto-num">301</p>
+                        <p class="impacto-sub">Participantes</p>
+                    </div>
+               
+                </div>
+
+            </div>
         </div>
+
+        <div >
+            <img class="gente-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg" alt="">
+        </div>
+
+        <h1 class="contenido-titulo">. Programas</h1>
+        
+        <div class="programas">
+            <div class="programas-contenedor-imagen" >
+                <img class="programas-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/11/xacademy-01.jpg" alt="">
+            </div>
+
+            <div class="programas-contenido">
+
+                <img class="programas-contenedor-santex" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/xacademy.svg">
+                <p class="programa-texto">xAcademy es un programa de formación en tecnología llevado adelante por la Fundación Tecnología con Propósito junto a Santex que busca promover un cambio positivo en la comunidad a través de la educación en IT, apuntando a lograr la inserción laboral de personas en el mundo tecnológico.</p>
+                <button class="redondo" style="padding-bottom: 1em; margin-left: 3em;">Mas info
+                    <span class="arrow">&#8594;</span>            
+                </button>
+            </div>
+        </div>
+
+        <div class="programas">
+            <div class="robotica-contenido">
+                <h1 class="robotica-titulo">Robótica educativa: la tecnología del futuro</h1>
+                <p class="robotica-texto" >Durante el curso, los alumnos y alumnas a través de la robótica desarrollan la curiosidad, el autodidactismo y las habilidades blandas necesarias para afrontar la revolución tecnológica del siglo XXI.
+                </p>
+                <button class="redondo" style="padding-bottom: 1em;margin: 1em 0 0 6.5em;"> Mas info 
+                    <span class="arrow" > &#8594;</span>   
+                </button>
+            </div>
+            <div class="robotica-contenedor-imagen">
+                <img  class="robotica-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/11/robotica-educativa-07.jpg" alt="">
+            </div>
+        </div>
+
+        <h1 class="contenido-titulo" style="padding-top: 3em;">.  Capacitaciones</h1>
+        <div class="programas">
+            <div class="programas-contenedor-imagen" >
+                <img class="programas-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/11/estafas-virtuales-04.jpg" alt="">
+            </div>
+
+            <div class="programas-contenido">
+
+                <h1 class="estafas-titulo">Estafas virtuales: ¿cómo protegernos?</h1>
+                <p class="programa-texto">xLos canales de comunicación a través de medios digitales cobraron gran protagonismo a partir de la pandemia. Al mismo tiempo, se perfeccionan cada vez más rápido las modalidades de estafas y fraudes virtuales. En esta capacitación vas a aprender diferentes tips y consejos útiles para navegar de manera más segura.</p>
+                <button class="redondo" style="padding-bottom: 1em; margin-left: 3em;">Mas info
+                    <span class="arrow">&#8594;</span>            
+                </button>
+            </div>
+        </div>
+
+        <div class="programas">
+            <div class="robotica-contenido">
+                <h1 class="robotica-titulo">Seguridad informática para infancias</h1>
+                <p class="robotica-texto" >¿Navegamos seguros en internet? La propuesta es una charla para niños y niñas donde se brindan herramientas de seguridad y autocuidado digital. </p>
+                <button class="redondo" style="padding-bottom: 1em;margin: 1em 0 0 6.5em;"> Mas info 
+                    <span class="arrow" > &#8594;</span>   
+                </button>
+            </div>
+            <div class="robotica-contenedor-imagen">
+                <img  class="robotica-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/seguridad-informatica-para-infancias.jpg" alt="">
+            </div>
+        </div>
+
+
+        <h1 class="contenido-titulo" style="margin-bottom: .5em;">. Equipo</h1>
+        <div class="equipo-container">
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-juan.png" alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Juan Santiago</h2>
+                    <p class="equipo-rol">Presidente</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-walter.png" alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Walter Abrigo</h2>
+                    <p class="equipo-rol">Secretario</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-gabriela.png" alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Gabriela Fernandez</h2>
+                    <p class="equipo-rol">Comisión Directiva</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-gabriel.png"  alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Gabriel Dubini</h2>
+                    <p class="equipo-rol">Gabriel Dubini</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-florencia.png"  alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Florencia D’Agostino</h2>
+                    <p class="equipo-rol">Dirección Ejecutiva</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-celeste.png"  alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Celeste Torresi</h2>
+                    <p class="equipo-rol">Comisión Directiva</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/twp-lucia.png"  alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Lucia Jaimez</h2>
+                    <p class="equipo-rol">Directora Academy</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src=" https://technologywithpurpose.org/wp-content/uploads/2023/05/agustin-chino.png"  alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Agustín Chino</h2>
+                    <p class="equipo-rol">Coord. Área Inclusión Social</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="equipo-item">
+                <div class="equipo-container-img">
+                    <img class="equipo-img" src=" https://technologywithpurpose.org/wp-content/uploads/2023/05/enzo-dotto.png"  alt="">
+                </div>
+                <div class="equipo-data">
+                    <h2 class="equipo-nombre">Enzo Dotto</h2>
+                    <p class="equipo-rol">Relaciones Institucionales</p>
+                    <a class="in-container" href="">
+                    <img class="equipo-in" src="https://www.svgrepo.com/show/360538/linkedin-circle.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="contenido-titulo" style="padding-top: 6em; margin: 0;">. Alianzas</h1>
+
+        <div class="alianzas-container">
+            
+            <img src="https://technologywithpurpose.org/wp-content/uploads/2022/10/alianza-naranja-400x151.png" class="alianzas-img" alt="">
+            <img src="https://technologywithpurpose.org/wp-content/uploads/2022/10/alianza-santex-400x151.png" class="alianzas-img" alt="">
+            <img src="https://technologywithpurpose.org/wp-content/uploads/2023/05/alianza-att-400x151.png" class="alianzas-img" alt="">
+            <img src="https://technologywithpurpose.org/wp-content/uploads/2022/11/alianza-banco-galicia-400x151.png" class="alianzas-img"  alt="">
+            <img src="https://technologywithpurpose.org/wp-content/uploads/2022/10/alianza-banco-alimentos-cordoba-400x151.png" class="alianzas-img" alt="">
+            
+        </div>
+
+
+        <footer class="footer-container">
+            <div class="footer-logo">
+                <img class="footer-img" src="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose-white.svg" alt="">
+            </div>
+            <div class="text-container">
+                <p class="footer-text" >Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn-footer">NOSOTROS</button>
+                <button class="btn-footer" style="padding: 0;">CONTACTO</button>
+            </div>
+            <div class="btn-container">
+                <button class="btn-footer">PROGRAMAS</button>
+                <button class="btn-footer" style="padding-left: 1em;" >CAPACITACIONES</button>
+            </div>
+            <div class="btn-container" style="padding-left: 0;">
+                <button class="btn-footer " style="display: flex; margin-bottom: .1em;"  > 
+                    <img class="redes-ig" style="margin: 0; display: flex; width: 20px; height: 20px;" src="https://w7.pngwing.com/pngs/300/178/png-transparent-computer-icons-icon-design-instagram-logo-miscellaneous-area-smile.png" alt="">
+                    INSTAGRAM</button>
+                <button class="btn-footer"  style="padding: 0;display: flex;align-items: center; margin-left: .4em;">
+                    <img class="redes-in"  style="width: 20px; height: 20px;" src="https://static.vecteezy.com/system/resources/previews/003/692/704/non_2x/linkedin-american-business-logo-social-media-icon-black-pictogram-illustration-isolated-on-white-backgroud-free-vector.jpg" alt="">
+                    LINKEDIN</button>
+            </div>
+        </footer>
+        
     </div>
 </body>
 </html>
